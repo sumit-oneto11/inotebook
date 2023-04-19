@@ -51,7 +51,7 @@ const Signup = (props) => {
           value={data.email}
           onChange={onChange}
         />
-        {errors.email && <span style={{color:'red'}}>This field is required</span>}
+        {errors.email && <span style={{color:'red'}}>This field is required.</span>}
       </div>
       <div className="mb-3">
         <label htmlFor="name" className="form-label">
@@ -61,7 +61,7 @@ const Signup = (props) => {
           type="text"
           className="form-control"
           id="name"
-          {...register("name", {required: {value:true, message:"This field is required"}, minLength:{value:3, message:"Name should be atleast 3 character."}})}
+          {...register("name", {required: {value:true, message:"This field is required."}, minLength:{value:3, message:"Name should be atleast 3 character."}})}
           value={data.name}
           onChange={onChange}
         />
@@ -75,7 +75,7 @@ const Signup = (props) => {
           type="password"
           className="form-control"
           id="password"
-          {...register("password", {required: {value:true, message:"This field is required"}, minLength:{value:5, message:"Password should be atleast 5 character."}})}
+          {...register("password", {required: {value:true, message:"This field is required."}, minLength:{value:5, message:"Password should be atleast 5 character."}})}
           value={data.password}
           onChange={onChange}
         />
